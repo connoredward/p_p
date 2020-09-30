@@ -1,5 +1,11 @@
-import App from '@components/App/App';
+import Navigation from '../components/Navigation';
 
-const Main: React.FunctionComponent = () => <App />;
+const Main: React.FunctionComponent = () => {
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
+};
 
 export default Main;

@@ -7,4 +7,10 @@ module.exports = withPlugins([
   [withSass, {
     cssModules: true
   }]
-])
+], {
+  publicRuntimeConfig: {
+    api: {
+      url: process.env.API_URL || 'http://localhost:8080/'
+    }
+  }
+});
